@@ -33,9 +33,14 @@ public class CadastroClientes {
 
     // Função para listar todos os clientes
     public void listarTodosClientes() {
-        System.out.println("Lista de Clientes:");
-        for (Cliente cliente : clientes) {
-            System.out.println(cliente);
+
+        if (clientes.isEmpty()) {
+            System.out.println("Nenhum cliente foi encontrado.");
+        } else {
+            System.out.println("Lista de Clientes:");
+            for (Cliente cliente : clientes) {
+                System.out.println(cliente);
+            }
         }
     }
 
@@ -91,7 +96,7 @@ public class CadastroClientes {
         String cpf = scanner.next();
 
         System.out.print("Informe o nome do cliente idoso: ");
-        String nome = scanner.nextLine();
+        String nome = scanner.next();
 
         scanner.next();
 

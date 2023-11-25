@@ -30,6 +30,8 @@ public class Main {
 
                 case 1 :
                     cadastro.criarClienteIdoso();
+                    System.out.println();
+                    break;
                 case 2:
                     cadastro.listarTodosClientes();
                     break;
